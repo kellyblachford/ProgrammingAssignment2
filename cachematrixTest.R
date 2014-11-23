@@ -1,0 +1,19 @@
+
+> amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
+> amatrix$get() 
+[,1] [,2]
+[1,]    1    3
+[2,]    2    4
+> cacheSolve(amatrix)
+[,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> amatrix$getinverse()
+[,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> cacheSolve(amatrix)
+getting cached data
+[,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
